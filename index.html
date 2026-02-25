@@ -48,11 +48,11 @@
         };
 
         const HomePage = ({ setPage }) => (
-            <div className="animate-in">
+            <div className="animate-in text-slate-800">
                 <section className="min-h-[85vh] flex flex-col items-center justify-center text-center px-6 bg-white overflow-hidden">
-                    <h2 className="text-xs md:text-sm font-bold tracking-[0.5em] text-slate-400 uppercase mb-8">Because the first step matters the most.</h2>
+                    <h2 className="text-xs md:text-sm font-bold tracking-[0.5em] text-slate-500 uppercase mb-8">Because the first step matters the most.</h2>
                     <h1 className="text-5xl md:text-8xl font-bold text-slate-900 mb-10 tracking-tighter">STEP ONE<span className="text-blue-600">.</span></h1>
-                    <p className="text-xl md:text-2xl text-slate-400 max-w-3xl leading-relaxed mb-16 font-light">
+                    <p className="text-xl md:text-2xl text-slate-500 max-w-3xl leading-relaxed mb-16 font-light">
                         หนังสือกึ่งไดอารี่ที่กลั่นกรองทุกความเสี่ยงออกมาเป็น 70 คำถาม 
                         เพื่อเช็คให้มั่นใจว่าก้าวแรกในสนามธุรกิจ... คุณจะไม่ "ตายน้ำตื้น"
                     </p>
@@ -65,29 +65,29 @@
                         </button>
                     </div>
                     <div className="mt-24 w-full max-w-5xl relative">
-                        <div className="bg-slate-50 aspect-[21/9] rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-1000">
-                           <img src="images/hero-book.jpg" alt="Hero" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.parentElement.innerHTML='<span class="text-sm tracking-[0.3em] uppercase font-bold text-slate-300 italic">Exterior View (images/hero-book.jpg)</span>'; }} />
+                        <div className="bg-slate-50 aspect-[21/9] rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex items-center justify-center">
+                           <img src="images/hero-book.jpg" alt="Hero" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.parentElement.innerHTML='<span class="text-sm tracking-[0.3em] uppercase font-bold text-slate-400 italic">Exterior View (images/hero-book.jpg)</span>'; }} />
                         </div>
                     </div>
                 </section>
 
                 <section className="py-32 bg-[#0f172a] text-white px-6">
                     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-20">
-                        <div className="flex-1 space-y-8 text-white">
+                        <div className="flex-1 space-y-8">
                             <h3 className="text-4xl font-bold tracking-tight text-white leading-tight">ไม่ใช่แค่สมุดจด แต่คือภูมิปัญญาที่คุณสร้างเอง</h3>
                             <p className="text-slate-400 text-xl leading-relaxed font-light">
                                 เราวางหินให้คุณเหยียบข้ามทีละก้อน ผ่าน 10 Phase สำคัญ 
                                 จากไอเดียฟุ้งๆ ในหัว สู่แผนงานที่จับต้องได้จริงแบบเจ้าของกิจการมืออาชีพ
                             </p>
                         </div>
-                        <div className="flex-1 grid grid-cols-2 gap-6 text-white">
+                        <div className="flex-1 grid grid-cols-2 gap-6">
                             <div className="p-10 bg-white/5 rounded-[2.5rem] border border-white/10 text-center">
                                 <p className="text-5xl font-bold text-blue-400">70</p>
-                                <p className="text-xs uppercase tracking-widest text-slate-500 mt-4 font-bold">Checklists</p>
+                                <p className="text-xs uppercase tracking-widest text-slate-400 mt-4 font-bold">Checklists</p>
                             </div>
                             <div className="p-10 bg-white/5 rounded-[2.5rem] border border-white/10 text-center">
                                 <p className="text-5xl font-bold text-blue-400">10</p>
-                                <p className="text-xs uppercase tracking-widest text-slate-500 mt-4 font-bold">Foundations</p>
+                                <p className="text-xs uppercase tracking-widest text-slate-400 mt-4 font-bold">Foundations</p>
                             </div>
                         </div>
                     </div>
@@ -95,32 +95,32 @@
 
                 <section className="py-32 bg-white px-6 border-b border-slate-50">
                     <div className="max-w-6xl mx-auto text-center mb-20">
-                        <h2 className="text-xs font-bold tracking-[0.4em] text-slate-400 uppercase mb-6">Look Inside</h2>
+                        <h2 className="text-xs font-bold tracking-[0.4em] text-slate-500 uppercase mb-6">Look Inside</h2>
                         <h3 className="text-4xl font-bold text-slate-900 tracking-tight leading-tight">กลั่นกรองก้าวแรกของคุณ...ผ่านคำถามที่ 'เจ็บ' และ 'จริง'</h3>
                     </div>
                     <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
                         <div className="flex-1 bg-slate-50 rounded-[3rem] p-16 border border-slate-100 flex flex-col justify-center min-h-[450px]">
                             <h4 className="text-2xl font-bold mb-6 italic text-slate-800 leading-snug">"คุณรู้จักลูกค้าดีพอหรือยัง?"</h4>
-                            <p className="text-slate-500 font-light leading-relaxed mb-10 text-lg">ตัวอย่างคำถามใน Phase 2 ที่จะทำให้คุณหยุดคิดและมองหา 'ตัวจริง' ที่จะจ่ายเงินให้คุณ</p>
+                            <p className="text-slate-600 font-light leading-relaxed mb-10 text-lg">ตัวอย่างคำถามใน Phase 2 ที่จะทำให้คุณหยุดคิดและมองหา 'ตัวจริง' ที่จะจ่ายเงินให้คุณ</p>
                             <div className="w-16 h-1 bg-slate-300 mb-6"></div>
-                            <p className="text-xs uppercase tracking-widest text-slate-300 font-bold">Page Preview 024</p>
+                            <p className="text-xs uppercase tracking-widest text-slate-400 font-bold">Page Preview 024</p>
                         </div>
-                        <div className="flex-[1.5] bg-slate-100 rounded-[3rem] shadow-sm overflow-hidden border border-slate-200 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-700">
-                             <img src="images/inside-book.jpg" alt="Inside" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.parentElement.innerHTML='<span class="text-sm tracking-[0.3em] uppercase font-bold text-slate-400 text-center px-10 italic">Interior Layout (images/inside-book.jpg)</span>'; }} />
+                        <div className="flex-[1.5] bg-slate-100 rounded-[3rem] shadow-sm overflow-hidden border border-slate-200 flex items-center justify-center">
+                             <img src="images/inside-book.jpg" alt="Inside" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.parentElement.innerHTML='<span class="text-sm tracking-[0.3em] uppercase font-bold text-slate-500 text-center px-10 italic">Interior Layout (images/inside-book.jpg)</span>'; }} />
                         </div>
                     </div>
                 </section>
 
                 <section className="py-24 text-center px-6">
-                    <h2 className="text-sm font-bold mb-12 text-slate-400 tracking-[0.4em] uppercase">Start Your Journey Today</h2>
+                    <h2 className="text-sm font-bold mb-12 text-slate-500 tracking-[0.4em] uppercase">Start Your Journey Today</h2>
                     <div className="flex flex-wrap justify-center gap-14">
-                        <a href="#" className="flex items-center gap-3 text-slate-400 hover:text-slate-900 transition-all font-bold text-xl">
+                        <a href="#" className="flex items-center gap-3 text-slate-500 hover:text-slate-900 transition-all font-bold text-xl">
                             <Icon name="shopping" className="w-7 h-7" /> Shopee
                         </a>
-                        <a href="#" className="flex items-center gap-3 text-slate-400 hover:text-slate-900 transition-all font-bold text-xl">
+                        <a href="#" className="flex items-center gap-3 text-slate-500 hover:text-slate-900 transition-all font-bold text-xl">
                             <Icon name="trending" className="w-7 h-7" /> TikTok Shop
                         </a>
-                        <a href="#" className="flex items-center gap-3 text-slate-400 hover:text-slate-900 transition-all font-bold text-xl">
+                        <a href="#" className="flex items-center gap-3 text-slate-500 hover:text-slate-900 transition-all font-bold text-xl">
                             <Icon name="facebook" className="w-7 h-7" /> Facebook
                         </a>
                     </div>
@@ -139,7 +139,7 @@
                 "คุณอธิบาย 'คุณค่า' ของสินค้าได้ใน 30 วินาที?",
                 "คุณมีแผนสำรอง (Plan B) หากแผนแรกไม่ได้ผล?",
                 "คุณรู้จักคู่แข่งทั้งทางตรงและทางอ้อมในตลาดเป็นอย่างดี?",
-                "คุณรู้วิธีการทำการตลาดในช่องทางที่กลุ่มเป้าหมายคุณอยู่จริงๆ?",
+                "คุณรู้วิธีการทำการตลาดในช่องทางที่กลุ่มเป้าหมายอยู่จริงๆ?",
                 "คุณพร้อมจะยอมรับความผิดพลาดและเริ่มต้นใหม่ได้โดยไม่ท้อ?",
                 "คุณเริ่มธุรกิจเพื่อแก้ปัญหาให้คนอื่น ไม่ใช่แค่เพราะอยากได้เงิน?"
             ];
@@ -147,26 +147,26 @@
             const score = useMemo(() => answers.reduce((acc, curr) => acc + (curr === true ? 10 : 0), 0), [answers]);
 
             return (
-                <div className="max-w-3xl mx-auto py-24 px-6 animate-in text-slate-800">
-                    <div className="text-center mb-20">
+                <div className="max-w-3xl mx-auto py-24 px-6 animate-in">
+                    <div className="text-center mb-20 text-slate-800">
                         <h2 className="text-4xl font-bold mb-6 text-slate-900 tracking-tight">Business Readiness Test</h2>
-                        <p className="text-slate-400 text-lg font-light leading-relaxed">วัดระดับความพร้อมในการเริ่มธุรกิจของคุณผ่านคำถามสำคัญจาก STEP ONE</p>
+                        <p className="text-slate-500 text-lg font-light leading-relaxed">วัดระดับความพร้อมในการเริ่มธุรกิจของคุณผ่านคำถามสำคัญจาก STEP ONE</p>
                     </div>
                     {!showResult ? (
                         <div className="space-y-6">
                             {questions.map((q, idx) => (
-                                <div key={idx} className="p-10 bg-white rounded-[2rem] border border-slate-100 shadow-sm transition-all hover:shadow-md">
+                                <div key={idx} className="p-10 bg-white rounded-[2rem] border border-slate-100 shadow-sm transition-all hover:shadow-md text-slate-800">
                                     <p className="text-xl font-bold mb-10 text-slate-800 leading-snug">{idx + 1}. {q}</p>
                                     <div className="flex gap-6">
-                                        <button onClick={() => { const n = [...answers]; n[idx] = true; setAnswers(n); }} className={`flex-1 py-5 rounded-2xl border-2 font-bold text-sm uppercase tracking-widest transition-all ${answers[idx] === true ? 'bg-[#0f172a] border-[#0f172a] text-white shadow-lg shadow-blue-900/20' : 'border-slate-50 text-slate-300 hover:border-slate-200'}`}>มั่นใจ / มีแล้ว</button>
-                                        <button onClick={() => { const n = [...answers]; n[idx] = false; setAnswers(n); }} className={`flex-1 py-5 rounded-2xl border-2 font-bold text-sm uppercase tracking-widest transition-all ${answers[idx] === false ? 'bg-red-50 border-red-100 text-red-500 shadow-lg shadow-red-100' : 'border-slate-50 text-slate-300 hover:border-slate-200'}`}>ยังไม่ชัวร์</button>
+                                        <button onClick={() => { const n = [...answers]; n[idx] = true; setAnswers(n); }} className={`flex-1 py-5 rounded-2xl border-2 font-bold text-sm uppercase tracking-widest transition-all ${answers[idx] === true ? 'bg-[#0f172a] border-[#0f172a] text-white shadow-lg shadow-blue-900/20' : 'border-slate-100 text-slate-500 hover:border-slate-300'}`}>มั่นใจ / มีแล้ว</button>
+                                        <button onClick={() => { const n = [...answers]; n[idx] = false; setAnswers(n); }} className={`flex-1 py-5 rounded-2xl border-2 font-bold text-sm uppercase tracking-widest transition-all ${answers[idx] === false ? 'bg-red-50 border-red-100 text-red-600 shadow-lg shadow-red-100' : 'border-slate-100 text-slate-500 hover:border-slate-300'}`}>ยังไม่ชัวร์</button>
                                     </div>
                                 </div>
                             ))}
                             <button disabled={answers.includes(null)} onClick={() => setShowResult(true)} className="w-full bg-[#0f172a] text-white py-6 mt-16 rounded-[2rem] font-bold text-lg uppercase tracking-[0.2em] shadow-2xl disabled:opacity-20 hover:bg-blue-900 transition-all">Calculate Readiness Score</button>
                         </div>
                     ) : (
-                        <div className="text-center bg-white p-16 rounded-[3.5rem] shadow-2xl border border-slate-50 animate-in">
+                        <div className="text-center bg-white p-16 rounded-[3.5rem] shadow-2xl border border-slate-50 animate-in text-slate-800">
                            <div className="relative inline-block mb-12">
                               <svg className="w-48 h-48 transform -rotate-90">
                                 <circle cx="96" cy="96" r="88" stroke="#f1f5f9" strokeWidth="10" fill="transparent" />
@@ -178,7 +178,7 @@
                            <div className="p-10 bg-[#0f172a] text-white rounded-[2.5rem] mb-12 text-left text-lg leading-relaxed font-light">
                              {score >= 80 ? "คุณมีความพร้อมสูงมาก! ก้าวต่อไปคือการเริ่มต้นขนาดเล็กเพื่อทดสอบตลาดจริง (MVP) และรักษาความสม่ำเสมอไว้" : score >= 50 ? "คุณมีพื้นฐานที่ดี แต่ควรกลับไปอุดรูรั่วในข้อที่คุณยังไม่มั่นใจก่อนลงเงินจริง" : "อย่าเพิ่งรีบ! กลับไปใช้ STEP ONE Workbook ตอบคำถามให้ครบ เพื่อเซฟเงินก้อนแรกของคุณ"}
                            </div>
-                           <button onClick={() => { setAnswers(Array(10).fill(null)); setShowResult(false); }} className="text-slate-300 hover:text-slate-900 text-xs font-bold uppercase tracking-[0.3em] underline underline-offset-8 decoration-1 decoration-slate-200">Retake Test</button>
+                           <button onClick={() => { setAnswers(Array(10).fill(null)); setShowResult(false); }} className="text-slate-500 hover:text-slate-900 text-xs font-bold uppercase tracking-[0.3em] underline underline-offset-8 decoration-1 decoration-slate-200">Retake Test</button>
                         </div>
                     )}
                 </div>
@@ -204,16 +204,16 @@
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8 border-b border-slate-100 pb-12">
                         <div>
                             <h2 className="text-4xl font-bold text-slate-900 mb-2 tracking-tight">Financial Dashboard</h2>
-                            <p className="text-slate-400 text-sm font-bold uppercase tracking-[0.3em]">Step One Toolkit</p>
+                            <p className="text-slate-500 text-sm font-bold uppercase tracking-[0.3em]">Step One Toolkit</p>
                         </div>
                         <div className="flex gap-10">
                             <div className="text-right">
-                                <p className="text-xs font-bold text-slate-300 uppercase tracking-widest mb-2">Total Fixed Cost</p>
+                                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Total Fixed Cost</p>
                                 <p className="text-3xl font-bold text-slate-900 tabular-nums">฿ {totalFixed.toLocaleString()}</p>
                             </div>
                             <div className="w-px h-14 bg-slate-100 mx-2"></div>
                             <div className="text-right">
-                                <p className="text-xs font-bold text-slate-300 uppercase tracking-widest mb-2">Total Investment</p>
+                                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Total Investment</p>
                                 <p className="text-3xl font-bold text-slate-900 tabular-nums">฿ {totalInv.toLocaleString()}</p>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
 
                     <div className="grid lg:grid-cols-12 gap-12 items-start">
                         <div className="lg:col-span-8 grid md:grid-cols-2 gap-8">
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm">
+                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm text-slate-800">
                                 <div className="flex items-center gap-3 mb-10 text-[#0f172a]">
                                     <div className="p-3 bg-slate-900 text-white rounded-2xl"><Icon name="settings" className="w-5 h-5" /></div>
                                     <h3 className="text-xs font-bold uppercase tracking-[0.2em]">Fixed Costs ต้นทุนคงที่</h3>
@@ -229,14 +229,15 @@
                                 <div className="space-y-6">
                                     {Object.keys(fixedCosts).map(k => (
                                         <div key={k} className="flex flex-col gap-2">
-                                            <label className="text-xs font-bold text-slate-300 uppercase tracking-widest">{k}</label>
-                                            <input type="number" value={fixedCosts[k] || ''} placeholder="0" onChange={e => setFixedCosts({...fixedCosts, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-100" />
+                                            {/* เปลี่ยนสี Label เป็น slate-600 เพื่อให้อ่านง่ายขึ้น */}
+                                            <label className="text-xs font-bold text-slate-600 uppercase tracking-widest">{k}</label>
+                                            <input type="number" value={fixedCosts[k] || ''} placeholder="0" onChange={e => setFixedCosts({...fixedCosts, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-200" />
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm">
+                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm text-slate-800">
                                 <div className="flex items-center gap-3 mb-10 text-[#0f172a]">
                                     <div className="p-3 bg-slate-900 text-white rounded-2xl"><Icon name="barChart" className="w-5 h-5" /></div>
                                     <h3 className="text-xs font-bold uppercase tracking-[0.2em]">Unit Economics</h3>
@@ -244,20 +245,21 @@
                                 <div className="space-y-6">
                                     {Object.keys(unitPricing).map(k => (
                                         <div key={k} className="flex flex-col gap-2">
-                                            <label className="text-xs font-bold text-slate-300 uppercase tracking-widest">{k}</label>
-                                            <input type="number" value={unitPricing[k] || ''} placeholder="0" onChange={e => setUnitPricing({...unitPricing, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-100" />
+                                            {/* เปลี่ยนสี Label เป็น slate-600 เพื่อให้อ่านง่ายขึ้น */}
+                                            <label className="text-xs font-bold text-slate-600 uppercase tracking-widest">{k}</label>
+                                            <input type="number" value={unitPricing[k] || ''} placeholder="0" onChange={e => setUnitPricing({...unitPricing, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-200" />
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm md:col-span-2">
-                                <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-300 mb-10">Initial Investment / Profit Projection</h3>
+                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm md:col-span-2 text-slate-800">
+                                <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-10">Initial Investment / Profit Projection</h3>
                                 <div className="grid md:grid-cols-3 gap-8">
                                     {Object.keys(investment).map(k => (
-                                        <div key={k} className="flex flex-col gap-2">
-                                            <label className="text-xs font-bold text-slate-300 uppercase tracking-widest">{k}</label>
-                                            <input type="number" value={investment[k] || ''} onChange={e => setInvestment({...investment, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-100" />
+                                        <div key={k} className="flex flex-col gap-2 text-slate-800">
+                                            <label className="text-xs font-bold text-slate-600 uppercase tracking-widest">{k}</label>
+                                            <input type="number" value={investment[k] || ''} onChange={e => setInvestment({...investment, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-200" />
                                         </div>
                                     ))}
                                     <div className="flex flex-col gap-2 md:col-span-3 pt-6 border-t border-slate-50 mt-4">
@@ -272,7 +274,7 @@
                             <div className="bg-[#0f172a] text-white p-14 rounded-[3rem] shadow-2xl relative overflow-hidden">
                                 <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px]"></div>
                                 <p className="text-xs uppercase tracking-[0.4em] text-slate-500 mb-12 font-bold">Monthly Break-even</p>
-                                <div className="flex items-baseline gap-4 mb-4 relative z-10">
+                                <div className="flex items-baseline gap-4 mb-4 relative z-10 text-white">
                                     <span className="text-8xl font-bold text-blue-400 tabular-nums tracking-tighter">{bep}</span>
                                     <span className="text-sm font-bold text-slate-500 uppercase tracking-widest">Units</span>
                                 </div>
@@ -281,13 +283,13 @@
                                 </div>
                             </div>
 
-                            <div className="bg-slate-50 p-14 rounded-[3rem] border border-slate-100">
-                                <p className="text-xs uppercase tracking-[0.4em] text-slate-300 mb-10 font-bold">Payback Period</p>
-                                <div className="flex items-baseline gap-4">
+                            <div className="bg-slate-50 p-14 rounded-[3rem] border border-slate-100 text-slate-800">
+                                <p className="text-xs uppercase tracking-[0.4em] text-slate-500 mb-10 font-bold">Payback Period</p>
+                                <div className="flex items-baseline gap-4 text-slate-900">
                                     <span className="text-7xl font-bold text-slate-900 tabular-nums tracking-tighter">{payback}</span>
-                                    <span className="text-sm font-bold text-slate-300 uppercase tracking-widest">Months</span>
+                                    <span className="text-sm font-bold text-slate-500 uppercase tracking-widest">Months</span>
                                 </div>
-                                <p className="text-sm text-slate-400 font-medium mt-8 italic">"ระยะเวลาคืนทุนโดยประมาณ"</p>
+                                <p className="text-sm text-slate-500 font-medium mt-8 italic text-center">"ระยะเวลาคืนทุนโดยประมาณ"</p>
                             </div>
                         </div>
                     </div>
@@ -298,16 +300,16 @@
         const ContactPage = () => (
             <div className="max-w-5xl mx-auto py-32 px-8 animate-in text-center text-slate-800">
                 <h2 className="text-5xl font-bold mb-6 text-slate-900 tracking-tight">Contact Us.</h2>
-                <p className="text-xl text-slate-400 font-light max-w-2xl mx-auto mb-20 leading-relaxed">มีคำถามเกี่ยวกับสมุด หรืออยากปรึกษาเรื่องก้าวแรกของการทำธุรกิจ? เรายินดีพูดคุยกับคุณเสมอ</p>
+                <p className="text-xl text-slate-500 font-light max-w-2xl mx-auto mb-20 leading-relaxed">มีคำถามเกี่ยวกับสมุด หรืออยากปรึกษาเรื่องก้าวแรกของการทำธุรกิจ? เรายินดีพูดคุยกับคุณเสมอ</p>
                 <div className="grid md:grid-cols-2 gap-20 text-left">
                     <div className="space-y-12">
                         <div className="flex items-center gap-6">
-                            <div className="w-14 h-14 bg-[#0f172a] text-white rounded-2xl flex items-center justify-center shadow-2xl shadow-blue-900/10"><Icon name="mail" className="w-6 h-6" /></div>
-                            <div><p className="text-xs font-bold text-slate-300 uppercase tracking-[0.2em] mb-1">Direct Email</p><p className="text-xl font-bold text-slate-900">step.onebestbook@gmail.com</p></div>
+                            <div className="w-14 h-14 bg-[#0f172a] text-white rounded-xl flex items-center justify-center shadow-2xl shadow-blue-900/10"><Icon name="mail" className="w-6 h-6" /></div>
+                            <div><p className="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-1">Direct Email</p><p className="text-xl font-bold text-slate-900">step.onebestbook@gmail.com</p></div>
                         </div>
                         <div className="flex items-center gap-6">
-                            <div className="w-14 h-14 bg-[#0f172a] text-white rounded-2xl flex items-center justify-center shadow-2xl shadow-blue-900/10"><Icon name="facebook" className="w-6 h-6" /></div>
-                            <div><p className="text-xs font-bold text-slate-300 uppercase tracking-[0.2em] mb-1">Community</p><p className="text-xl font-bold text-slate-900">STEP ONE Workbook</p></div>
+                            <div className="w-14 h-14 bg-[#0f172a] text-white rounded-xl flex items-center justify-center shadow-2xl shadow-blue-900/10"><Icon name="facebook" className="w-6 h-6" /></div>
+                            <div><p className="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-1">Community</p><p className="text-xl font-bold text-slate-900">STEP ONE Workbook</p></div>
                         </div>
                     </div>
                     <form className="space-y-6">
@@ -328,7 +330,7 @@
                     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-2xl border-b border-slate-50 px-10 py-6">
                         <div className="max-w-7xl mx-auto flex items-center justify-between">
                             <h1 onClick={() => setPage('home')} className="text-2xl font-bold text-slate-900 cursor-pointer tracking-tighter">STEP ONE<span className="text-blue-600">.</span></h1>
-                            <div className="hidden md:flex gap-12 text-[13px] font-bold uppercase tracking-[0.25em] text-slate-400">
+                            <div className="hidden md:flex gap-12 text-[13px] font-bold uppercase tracking-[0.25em] text-slate-500">
                                 <button onClick={() => setPage('home')} className={`hover:text-slate-900 transition-colors ${page === 'home' ? 'text-slate-900' : ''}`}>Home</button>
                                 <button onClick={() => setPage('quiz')} className={`hover:text-slate-900 transition-colors ${page === 'quiz' ? 'text-slate-900' : ''}`}>Quiz</button>
                                 <button onClick={() => setPage('calc')} className={`hover:text-slate-900 transition-colors ${page === 'calc' ? 'text-slate-900' : ''}`}>Tools</button>
@@ -349,16 +351,16 @@
                         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
                             <div>
                                 <h2 className="text-2xl font-bold text-slate-900 tracking-tight">STEP ONE<span className="text-blue-600">.</span></h2>
-                                <p className="text-slate-400 text-sm font-bold uppercase tracking-[0.3em] mt-2 underline decoration-1 underline-offset-8 decoration-slate-200">Because the first step matters the most.</p>
+                                <p className="text-slate-500 text-sm font-bold uppercase tracking-[0.3em] mt-2 underline decoration-1 underline-offset-8 decoration-slate-200">Because the first step matters the most.</p>
                             </div>
-                            <div className="flex gap-12 text-slate-300 text-[13px] font-bold uppercase tracking-[0.2em]">
+                            <div className="flex gap-12 text-slate-400 text-[13px] font-bold uppercase tracking-[0.2em]">
                                 <button onClick={() => setPage('quiz')} className="hover:text-slate-900 transition-all">Readiness</button>
                                 <button onClick={() => setPage('calc')} className="hover:text-slate-900 transition-all">Calculators</button>
                                 <button onClick={() => setPage('contact')} className="hover:text-slate-900 transition-all">Contact</button>
                             </div>
                         </div>
                         <div className="max-w-7xl mx-auto mt-16 pt-16 border-t border-slate-200/40">
-                            <p className="text-slate-300 text-[10px] uppercase font-bold tracking-[0.3em] text-center md:text-left">© 2024 STEP ONE Workbook. Made for Future Entrepreneurs.</p>
+                            <p className="text-slate-400 text-[10px] uppercase font-bold tracking-[0.3em] text-center md:text-left">© 2024 STEP ONE Workbook. Made for Future Entrepreneurs.</p>
                         </div>
                     </footer>
                 </div>
