@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STEP ONE - Because the first step matters the most.</title>
     
-    <!-- SEO & Social Sharing -->
     <meta name="description" content="หนังสือกึ่งไดอารี่ที่กลั่นกรองทุกความเสี่ยงออกมาเป็น 70 คำถาม เพื่อเช็คให้มั่นใจว่าก้าวแรกในสนามธุรกิจ... คุณจะไม่ ตายน้ำตื้น">
     <meta property="og:title" content="STEP ONE Business Calculator & Quiz">
     <meta property="og:description" content="ประเมินความพร้อมและคำนวณแผนการเงินธุรกิจของคุณก่อนเริ่มก้าวแรก">
     <meta property="og:type" content="website">
 
-    <!-- Libraries -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -23,8 +21,6 @@
         input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .animate-in { animation: fadeIn 0.6s ease-out forwards; }
-        .selection\:bg-blue-100 ::selection { background-color: #dbeafe; }
-        .selection\:text-blue-900 ::selection { color: #1e3a8a; }
     </style>
 </head>
 <body class="bg-white">
@@ -41,8 +37,8 @@
                 facebook: <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />,
                 shopping: <g><circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" /><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" /></g>,
                 mail: <g><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></g>,
-                settings: <g><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" /></g>,
-                barChart: <g><line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" /></g>
+                barChart: <g><line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" /></g>,
+                settings: <g><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" /></g>
             };
             return (
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -52,16 +48,16 @@
         };
 
         const HomePage = ({ setPage }) => (
-            <div className="animate-in">
+            <div className="animate-in text-slate-800">
                 <section className="min-h-[85vh] flex flex-col items-center justify-center text-center px-6 bg-white overflow-hidden">
-                    <h2 className="text-sm md:text-base font-bold tracking-[0.5em] text-slate-500 uppercase mb-8">Because the first step matters the most.</h2>
+                    <h2 className="text-xs md:text-sm font-bold tracking-[0.5em] text-slate-500 uppercase mb-8">Because the first step matters the most.</h2>
                     <h1 className="text-5xl md:text-8xl font-bold text-slate-900 mb-10 tracking-tighter">STEP ONE<span className="text-blue-600">.</span></h1>
-                    <p className="text-xl md:text-3xl text-slate-500 max-w-3xl leading-relaxed mb-16 font-light">
+                    <p className="text-xl md:text-2xl text-slate-500 max-w-3xl leading-relaxed mb-16 font-light">
                         หนังสือกึ่งไดอารี่ที่กลั่นกรองทุกความเสี่ยงออกมาเป็น 70 คำถาม 
                         เพื่อเช็คให้มั่นใจว่าก้าวแรกในสนามธุรกิจ... คุณจะไม่ "ตายน้ำตื้น"
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6">
-                        <button onClick={() => setPage('quiz')} className="bg-[#0f172a] text-white px-10 py-5 rounded-full font-semibold hover:bg-blue-900 transition-all flex items-center gap-3 text-lg shadow-xl">
+                        <button onClick={() => setPage('quiz')} className="bg-[#0f172a] text-white px-10 py-5 rounded-full font-semibold hover:bg-blue-900 transition-all flex items-center gap-3 text-lg shadow-xl shadow-blue-900/10">
                             ประเมินความพร้อมในการเริ่มธุรกิจ <Icon name="chevronRight" className="w-4 h-4" />
                         </button>
                         <button onClick={() => setPage('calc')} className="bg-white text-[#0f172a] border-2 border-[#0f172a] px-10 py-5 rounded-full font-semibold hover:bg-slate-50 transition-all text-lg">
@@ -69,8 +65,8 @@
                         </button>
                     </div>
                     <div className="mt-24 w-full max-w-5xl relative">
-                        <div className="bg-slate-50 aspect-[21/9] rounded-[2rem] border border-slate-100 shadow-sm overflow-hidden flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-1000">
-                           <img src="images/hero-book.jpg" alt="Hero" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.parentElement.innerHTML='<span class="text-sm tracking-[0.3em] uppercase font-bold text-slate-300 italic">Exterior View (images/hero-book.jpg)</span>'; }} />
+                        <div className="bg-slate-50 aspect-[21/9] rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex items-center justify-center">
+                           <img src="images/hero-book.jpg" alt="Hero" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.parentElement.innerHTML='<span class="text-sm tracking-[0.3em] uppercase font-bold text-slate-400 italic">Exterior View (images/hero-book.jpg)</span>'; }} />
                         </div>
                     </div>
                 </section>
@@ -86,12 +82,12 @@
                         </div>
                         <div className="flex-1 grid grid-cols-2 gap-6">
                             <div className="p-10 bg-white/5 rounded-[2.5rem] border border-white/10 text-center">
-                                <p className="text-6xl font-bold text-blue-400">70</p>
-                                <p className="text-sm uppercase tracking-widest text-slate-400 mt-4 font-bold">Checklists</p>
+                                <p className="text-5xl font-bold text-blue-400">70</p>
+                                <p className="text-xs uppercase tracking-widest text-slate-400 mt-4 font-bold">Checklists</p>
                             </div>
                             <div className="p-10 bg-white/5 rounded-[2.5rem] border border-white/10 text-center">
-                                <p className="text-6xl font-bold text-blue-400">10</p>
-                                <p className="text-sm uppercase tracking-widest text-slate-400 mt-4 font-bold">Foundations</p>
+                                <p className="text-5xl font-bold text-blue-400">10</p>
+                                <p className="text-xs uppercase tracking-widest text-slate-400 mt-4 font-bold">Foundations</p>
                             </div>
                         </div>
                     </div>
@@ -99,18 +95,18 @@
 
                 <section className="py-32 bg-white px-6 border-b border-slate-50">
                     <div className="max-w-6xl mx-auto text-center mb-20">
-                        <h2 className="text-sm font-bold tracking-[0.4em] text-slate-500 uppercase mb-6">Look Inside</h2>
-                        <h3 className="text-4xl font-bold text-slate-900 tracking-tight leading-tight">กลั่นกรองก้าวแรกของคุณ...ผ่านคำถามที่ 'เจ็บ' และ 'จริง'</h3>
+                        <h2 className="text-xs font-bold tracking-[0.4em] text-slate-500 uppercase mb-6">Look Inside</h2>
+                        <h3 className="text-4xl font-bold text-slate-900 tracking-tight leading-tight">กลั่นกรองทุกก้าว...อย่างละเอียด</h3>
                     </div>
                     <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
                         <div className="flex-1 bg-slate-50 rounded-[3rem] p-16 border border-slate-100 flex flex-col justify-center min-h-[450px]">
                             <h4 className="text-2xl font-bold mb-6 italic text-slate-800 leading-snug">"คุณรู้จักลูกค้าดีพอหรือยัง?"</h4>
                             <p className="text-slate-600 font-light leading-relaxed mb-10 text-lg">ตัวอย่างคำถามใน Phase 2 ที่จะทำให้คุณหยุดคิดและมองหา 'ตัวจริง' ที่จะจ่ายเงินให้คุณ</p>
-                            <div className="w-20 h-1 bg-slate-300 mb-6"></div>
-                            <p className="text-sm uppercase tracking-widest text-slate-500 font-bold">Page Preview 024</p>
+                            <div className="w-16 h-1 bg-slate-300 mb-6"></div>
+                            <p className="text-xs uppercase tracking-widest text-slate-400 font-bold">Page Preview 024</p>
                         </div>
                         <div className="flex-[1.5] bg-slate-100 rounded-[3rem] shadow-sm overflow-hidden border border-slate-200 flex items-center justify-center">
-                             <img src="images/inside-book.jpg" alt="Inside" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.parentElement.innerHTML='<span class="text-sm tracking-[0.3em] uppercase font-bold text-slate-400 text-center px-10 italic">Interior Layout (images/inside-book.jpg)</span>'; }} />
+                             <img src="images/inside-book.jpg" alt="Inside" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.parentElement.innerHTML='<span class="text-sm tracking-[0.3em] uppercase font-bold text-slate-500 text-center px-10 italic">Interior Layout (images/inside-book.jpg)</span>'; }} />
                         </div>
                     </div>
                 </section>
@@ -119,13 +115,13 @@
                     <h2 className="text-sm font-bold mb-12 text-slate-500 tracking-[0.4em] uppercase">Start Your Journey Today</h2>
                     <div className="flex flex-wrap justify-center gap-14">
                         <a href="#" className="flex items-center gap-3 text-slate-500 hover:text-slate-900 transition-all font-bold text-xl">
-                            <Icon name="shopping" className="w-8 h-8" /> Shopee
+                            <Icon name="shopping" className="w-7 h-7" /> Shopee
                         </a>
                         <a href="#" className="flex items-center gap-3 text-slate-500 hover:text-slate-900 transition-all font-bold text-xl">
-                            <Icon name="trending" className="w-8 h-8" /> TikTok Shop
+                            <Icon name="trending" className="w-7 h-7" /> TikTok Shop
                         </a>
                         <a href="#" className="flex items-center gap-3 text-slate-500 hover:text-slate-900 transition-all font-bold text-xl">
-                            <Icon name="facebook" className="w-8 h-8" /> Facebook
+                            <Icon name="facebook" className="w-7 h-7" /> Facebook
                         </a>
                     </div>
                 </section>
@@ -143,7 +139,7 @@
                 "คุณอธิบาย 'คุณค่า' ของสินค้าได้ใน 30 วินาที?",
                 "คุณมีแผนสำรอง (Plan B) หากแผนแรกไม่ได้ผล?",
                 "คุณรู้จักคู่แข่งทั้งทางตรงและทางอ้อมในตลาดเป็นอย่างดี?",
-                "คุณรู้วิธีการทำการตลาดในช่องทางที่กลุ่มเป้าหมายคุณอยู่จริงๆ?",
+                "คุณรู้วิธีการทำการตลาดในช่องทางที่กลุ่มเป้าหมายอยู่จริงๆ?",
                 "คุณพร้อมจะยอมรับความผิดพลาดและเริ่มต้นใหม่ได้โดยไม่ท้อ?",
                 "คุณเริ่มธุรกิจเพื่อแก้ปัญหาให้คนอื่น ไม่ใช่แค่เพราะอยากได้เงิน?"
             ];
@@ -154,35 +150,35 @@
                 <div className="max-w-3xl mx-auto py-24 px-6 animate-in">
                     <div className="text-center mb-20 text-slate-800">
                         <h2 className="text-4xl font-bold mb-6 text-slate-900 tracking-tight">Business Readiness Test</h2>
-                        <p className="text-slate-600 text-lg font-light leading-relaxed">วัดระดับความพร้อมในการเริ่มธุรกิจของคุณผ่านคำถามสำคัญจาก STEP ONE</p>
+                        <p className="text-slate-500 text-lg font-light leading-relaxed">วัดระดับความพร้อมในการเริ่มธุรกิจของคุณผ่านคำถามสำคัญจาก STEP ONE</p>
                     </div>
                     {!showResult ? (
                         <div className="space-y-6">
                             {questions.map((q, idx) => (
-                                <div key={idx} className="p-10 bg-white rounded-[2.5rem] border border-slate-100 shadow-sm transition-all hover:shadow-md text-slate-800">
-                                    <p className="text-2xl font-bold mb-10 text-slate-800 leading-snug">{idx + 1}. {q}</p>
+                                <div key={idx} className="p-10 bg-white rounded-[2rem] border border-slate-100 shadow-sm transition-all hover:shadow-md text-slate-800">
+                                    <p className="text-xl font-bold mb-10 text-slate-800 leading-snug">{idx + 1}. {q}</p>
                                     <div className="flex gap-6">
-                                        <button onClick={() => { const n = [...answers]; n[idx] = true; setAnswers(n); }} className={`flex-1 py-6 rounded-2xl border-2 font-bold text-base uppercase tracking-widest transition-all ${answers[idx] === true ? 'bg-[#0f172a] border-[#0f172a] text-white shadow-lg' : 'border-slate-200 text-slate-500 hover:border-slate-400'}`}>มั่นใจ / มีแล้ว</button>
-                                        <button onClick={() => { const n = [...answers]; n[idx] = false; setAnswers(n); }} className={`flex-1 py-6 rounded-2xl border-2 font-bold text-base uppercase tracking-widest transition-all ${answers[idx] === false ? 'bg-red-50 border-red-100 text-red-600 shadow-lg' : 'border-slate-200 text-slate-500 hover:border-slate-400'}`}>ยังไม่ชัวร์</button>
+                                        <button onClick={() => { const n = [...answers]; n[idx] = true; setAnswers(n); }} className={`flex-1 py-5 rounded-2xl border-2 font-bold text-sm uppercase tracking-widest transition-all ${answers[idx] === true ? 'bg-[#0f172a] border-[#0f172a] text-white shadow-lg shadow-blue-900/20' : 'border-slate-100 text-slate-500 hover:border-slate-300'}`}>มั่นใจ / มีแล้ว</button>
+                                        <button onClick={() => { const n = [...answers]; n[idx] = false; setAnswers(n); }} className={`flex-1 py-5 rounded-2xl border-2 font-bold text-sm uppercase tracking-widest transition-all ${answers[idx] === false ? 'bg-red-50 border-red-100 text-red-600 shadow-lg shadow-red-100' : 'border-slate-100 text-slate-500 hover:border-slate-300'}`}>ยังไม่ชัวร์</button>
                                     </div>
                                 </div>
                             ))}
-                            <button disabled={answers.includes(null)} onClick={() => setShowResult(true)} className="w-full bg-[#0f172a] text-white py-8 mt-16 rounded-[2.5rem] font-bold text-xl uppercase tracking-[0.2em] shadow-2xl disabled:opacity-20 transition-all">Calculate Readiness Score</button>
+                            <button disabled={answers.includes(null)} onClick={() => setShowResult(true)} className="w-full bg-[#0f172a] text-white py-6 mt-16 rounded-[2rem] font-bold text-lg uppercase tracking-[0.2em] shadow-2xl disabled:opacity-20 hover:bg-blue-900 transition-all">Calculate Readiness Score</button>
                         </div>
                     ) : (
-                        <div className="text-center bg-white p-20 rounded-[4rem] shadow-2xl border border-slate-50 animate-in">
+                        <div className="text-center bg-white p-16 rounded-[3.5rem] shadow-2xl border border-slate-50 animate-in text-slate-800">
                            <div className="relative inline-block mb-12">
-                              <svg className="w-56 h-56 transform -rotate-90">
-                                <circle cx="112" cy="112" r="100" stroke="#f1f5f9" strokeWidth="12" fill="transparent" />
-                                <circle cx="112" cy="112" r="100" stroke="#0f172a" strokeWidth="12" fill="transparent" strokeDasharray="628" strokeDashoffset={628 - (628 * score / 100)} className="transition-all duration-1000 ease-out" />
+                              <svg className="w-48 h-48 transform -rotate-90">
+                                <circle cx="96" cy="96" r="88" stroke="#f1f5f9" strokeWidth="10" fill="transparent" />
+                                <circle cx="96" cy="96" r="88" stroke="#0f172a" strokeWidth="10" fill="transparent" strokeDasharray="553" strokeDashoffset={553 - (553 * score / 100)} className="transition-all duration-1000 ease-out" />
                               </svg>
-                              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl font-bold text-slate-900 tabular-nums">{score}%</div>
+                              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl font-bold text-slate-900 tabular-nums">{score}%</div>
                            </div>
-                           <h3 className="text-4xl font-bold text-slate-900 mb-10 tracking-tight">Business Readiness Score</h3>
-                           <div className="p-12 bg-[#0f172a] text-white rounded-[3rem] mb-12 text-left text-xl leading-relaxed font-light">
+                           <h3 className="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Business Readiness Score</h3>
+                           <div className="p-10 bg-[#0f172a] text-white rounded-[2.5rem] mb-12 text-left text-lg leading-relaxed font-light">
                              {score >= 80 ? "คุณมีความพร้อมสูงมาก! ก้าวต่อไปคือการเริ่มต้นขนาดเล็กเพื่อทดสอบตลาดจริง (MVP) และรักษาความสม่ำเสมอไว้" : score >= 50 ? "คุณมีพื้นฐานที่ดี แต่ควรกลับไปอุดรูรั่วในข้อที่คุณยังไม่มั่นใจก่อนลงเงินจริง" : "อย่าเพิ่งรีบ! กลับไปใช้ STEP ONE Workbook ตอบคำถามให้ครบ เพื่อเซฟเงินก้อนแรกของคุณ"}
                            </div>
-                           <button onClick={() => { setAnswers(Array(10).fill(null)); setShowResult(false); }} className="text-slate-500 hover:text-slate-900 text-sm font-bold uppercase tracking-[0.3em] underline underline-offset-8 decoration-1">Retake Test</button>
+                           <button onClick={() => { setAnswers(Array(10).fill(null)); setShowResult(false); }} className="text-slate-500 hover:text-slate-900 text-xs font-bold uppercase tracking-[0.3em] underline underline-offset-8 decoration-1 decoration-slate-200">Retake Test</button>
                         </div>
                     )}
                 </div>
@@ -191,74 +187,69 @@
 
         const CalculatorPage = () => {
             const [fixedCosts, setFixedCosts] = useState({ 'ค่าเช่า': 15000, 'ค่าแรง': 20000, 'การตลาด': 5000, 'น้ำ/ไฟ (น้ำ/ไฟ)': 0 });
-            const [unitPricing, setUnitPricing] = useState({ 'ราคาขาย': 350, 'ทุนผลิต': 120, 'ค่าส่ง': 30, 'Commission (%)': 0 });
+            const [unitPricing, setUnitPricing] = useState({ 'ราคาขาย': 350, 'ต้นทุนผลิต/วัตถุดิบ ต่อชิ้น': 120, 'ค่าส่ง': 30, 'Commission (%)': 0 });
             const [investment, setInvestment] = useState({ 'ตกแต่งร้าน': 50000, 'อุปกรณ์': 30000 });
             const [monthlyProfit, setMonthlyProfit] = useState(15000);
 
             const totalFixed = Object.values(fixedCosts).reduce((a, b) => a + Number(b || 0), 0);
             const price = Number(unitPricing['ราคาขาย'] || 0);
-            const commPct = Number(unitPricing['Commission (%)'] || 0);
-            
-            // --- แก้ไข 1: คำนวณยอดเงิน Commission ---
-            const commissionVal = (price * commPct) / 100;
-            
-            const varCost = Number(unitPricing['ทุนผลิต'] || 0) + Number(unitPricing['ค่าส่ง'] || 0) + commissionVal;
+            const varCost = Number(unitPricing['ทุนผลิต'] || 0) + Number(unitPricing['ค่าส่ง'] || 0) + (price * Number(unitPricing['Commission (%)'] || 0) / 100);
             const contribution = price - varCost;
             const bep = contribution > 0 ? Math.ceil(totalFixed / contribution) : 0;
             const totalInv = Object.values(investment).reduce((a, b) => a + Number(b || 0), 0);
             const payback = monthlyProfit > 0 ? (totalInv / monthlyProfit).toFixed(1) : 0;
 
             return (
-                <div className="max-w-7xl mx-auto py-24 px-8 animate-in text-slate-800">
-                    <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-10 border-b border-slate-100 pb-12">
+                <div className="max-w-7xl mx-auto py-20 px-8 animate-in text-slate-800">
+                    <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8 border-b border-slate-100 pb-12">
                         <div>
-                            <h2 className="text-5xl font-bold text-slate-900 mb-3 tracking-tight">Financial Dashboard</h2>
-                            <p className="text-slate-500 text-base font-bold uppercase tracking-[0.3em]">Step One Toolkit</p>
+                            <h2 className="text-4xl font-bold text-slate-900 mb-2 tracking-tight">Financial Dashboard</h2>
+                            <p className="text-slate-500 text-sm font-bold uppercase tracking-[0.3em]">Step One Toolkit</p>
                         </div>
-                        <div className="flex gap-14">
+                        <div className="flex gap-10">
                             <div className="text-right">
-                                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Total Fixed Cost</p>
-                                <p className="text-4xl font-bold text-slate-900 tabular-nums">฿ {totalFixed.toLocaleString()}</p>
+                                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Total Fixed Cost</p>
+                                <p className="text-3xl font-bold text-slate-900 tabular-nums">฿ {totalFixed.toLocaleString()}</p>
                             </div>
-                            <div className="w-px h-16 bg-slate-100 mx-2"></div>
+                            <div className="w-px h-14 bg-slate-100 mx-2"></div>
                             <div className="text-right">
-                                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Total Investment</p>
-                                <p className="text-4xl font-bold text-slate-900 tabular-nums">฿ {totalInv.toLocaleString()}</p>
+                                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Total Investment</p>
+                                <p className="text-3xl font-bold text-slate-900 tabular-nums">฿ {totalInv.toLocaleString()}</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="grid lg:grid-cols-12 gap-12 items-start">
-                        <div className="lg:col-span-8 grid md:grid-cols-2 gap-10">
-                            <div className="bg-white p-12 rounded-[3rem] border border-slate-100 shadow-sm">
-                                <div className="flex items-center gap-4 mb-12 text-[#0f172a]">
-                                    <div className="p-4 bg-slate-900 text-white rounded-2xl shadow-lg"><Icon name="settings" className="w-6 h-6" /></div>
-                                    <h3 className="text-sm font-bold uppercase tracking-[0.2em]">Fixed Costs ต้นทุนคงที่</h3>
+                        <div className="lg:col-span-8 grid md:grid-cols-2 gap-8">
+                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm text-slate-800">
+                                <div className="flex items-center gap-3 mb-10 text-[#0f172a]">
+                                    <div className="p-3 bg-slate-900 text-white rounded-2xl"><Icon name="settings" className="w-5 h-5" /></div>
+                                    <h3 className="text-xs font-bold uppercase tracking-[0.2em]">Fixed Costs ต้นทุนคงที่</h3>
                                 </div>
-                                <div className="space-y-8">
+                                <div className="space-y-6">
                                     {Object.keys(fixedCosts).map(k => (
-                                        <div key={k} className="flex flex-col gap-3">
+                                        <div key={k} className="flex flex-col gap-2">
                                             <label className="text-xs font-bold text-slate-600 uppercase tracking-widest">{k}</label>
-                                            <input type="number" value={fixedCosts[k] || ''} placeholder="0" onChange={e => setFixedCosts({...fixedCosts, [k]: e.target.value})} className="w-full bg-slate-50 p-5 rounded-2xl border-none font-bold text-xl outline-none focus:ring-4 focus:ring-slate-100 transition-all" />
+                                            <input type="number" value={fixedCosts[k] || ''} placeholder="0" onChange={e => setFixedCosts({...fixedCosts, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-200" />
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            <div className="bg-white p-12 rounded-[3rem] border border-slate-100 shadow-sm text-slate-800">
-                                <div className="flex items-center gap-4 mb-12 text-[#0f172a]">
-                                    <div className="p-4 bg-slate-900 text-white rounded-2xl shadow-lg"><Icon name="barChart" className="w-6 h-6" /></div>
-                                    <h3 className="text-sm font-bold uppercase tracking-[0.2em]">Unit Economics</h3>
+                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm text-slate-800">
+                                <div className="flex items-center gap-3 mb-10 text-[#0f172a]">
+                                    <div className="p-3 bg-slate-900 text-white rounded-2xl"><Icon name="barChart" className="w-5 h-5" /></div>
+                                    <h3 className="text-xs font-bold uppercase tracking-[0.2em]">Unit Economics</h3>
                                 </div>
-                                <div className="space-y-8">
+                                <div className="space-y-6">
                                     {Object.keys(unitPricing).map(k => (
-                                        <div key={k} className="flex flex-col gap-3">
+                                        <div key={k} className="flex flex-col gap-2">
                                             <label className="text-xs font-bold text-slate-600 uppercase tracking-widest">{k}</label>
-                                            <input type="number" value={unitPricing[k] || ''} placeholder="0" onChange={e => setUnitPricing({...unitPricing, [k]: e.target.value})} className="w-full bg-slate-50 p-5 rounded-2xl border-none font-bold text-xl outline-none focus:ring-4 focus:ring-slate-100 transition-all" />
-                                            {/* --- แก้ไข 1: แสดงยอดเงินคอมมิชชันแปลงแล้ว --- */}
-                                            {k === 'Commission (%)' && commissionVal > 0 && (
-                                                <p className="text-xs font-bold text-blue-600 uppercase tracking-widest ml-1 animate-in">
-                                                    = ฿ {commissionVal.toLocaleString()} / Unit
+                                            <input type="number" value={unitPricing[k] || ''} placeholder="0" onChange={e => setUnitPricing({...unitPricing, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-200" />
+                                            {/* เพิ่มส่วนการแปลง % Commission เป็นจำนวนเงิน */}
+                                            {k === 'Commission (%)' && unitPricing[k] > 0 && (
+                                                <p className="text-xs font-bold text-blue-500 mt-1">
+                                                    คิดเป็น ฿ {((price * Number(unitPricing[k])) / 100).toLocaleString()} ต่อชิ้น
                                                 </p>
                                             )}
                                         </div>
@@ -266,47 +257,47 @@
                                 </div>
                             </div>
 
-                            <div className="bg-white p-12 rounded-[3rem] border border-slate-100 shadow-sm md:col-span-2">
-                                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-slate-500 mb-12">Initial Investment / Profit Projection</h3>
-                                <div className="grid md:grid-cols-3 gap-10">
+                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm md:col-span-2 text-slate-800">
+                                <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-10">Initial Investment / Profit Projection</h3>
+                                <div className="grid md:grid-cols-3 gap-8">
                                     {Object.keys(investment).map(k => (
-                                        <div key={k} className="flex flex-col gap-3">
+                                        <div key={k} className="flex flex-col gap-2 text-slate-800">
                                             <label className="text-xs font-bold text-slate-600 uppercase tracking-widest">{k}</label>
-                                            <input type="number" value={investment[k] || ''} onChange={e => setInvestment({...investment, [k]: e.target.value})} className="w-full bg-slate-50 p-5 rounded-2xl border-none font-bold text-xl outline-none focus:ring-4 focus:ring-slate-100 transition-all" />
+                                            <input type="number" value={investment[k] || ''} onChange={e => setInvestment({...investment, [k]: e.target.value})} className="w-full bg-slate-50 p-4 rounded-2xl border-none font-bold text-lg outline-none transition-all focus:ring-2 focus:ring-slate-200" />
                                         </div>
                                     ))}
-                                    <div className="flex flex-col gap-4 md:col-span-3 pt-10 border-t border-slate-50 mt-4">
-                                        <label className="text-base font-bold text-blue-600 uppercase tracking-[0.2em]">ประมาณการกำไรสุทธิต่อเดือน</label>
-                                        <input type="number" value={monthlyProfit || ''} onChange={e => setMonthlyProfit(e.target.value)} className="w-full bg-blue-50 p-6 rounded-[2rem] border-none font-bold text-3xl text-blue-900 outline-none focus:ring-8 focus:ring-blue-100 transition-all" />
+                                    <div className="flex flex-col gap-2 md:col-span-3 pt-6 border-t border-slate-50 mt-4">
+                                        <label className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em]">ประมาณการกำไรสุทธิต่อเดือน</label>
+                                        <input type="number" value={monthlyProfit || ''} onChange={e => setMonthlyProfit(e.target.value)} className="w-full bg-blue-50 p-5 rounded-[1.5rem] border-none font-bold text-2xl text-blue-900 outline-none focus:ring-4 focus:ring-blue-100" />
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="lg:col-span-4 space-y-10 lg:sticky lg:top-32">
-                            <div className="bg-[#0f172a] text-white p-16 rounded-[4rem] shadow-2xl relative overflow-hidden">
-                                <div className="absolute -top-20 -right-20 w-80 h-80 bg-blue-500/10 rounded-full blur-[100px]"></div>
-                                <p className="text-xs uppercase tracking-[0.4em] text-slate-500 mb-14 font-bold">Monthly Break-even</p>
-                                <div className="flex items-baseline gap-4 mb-4 relative z-10">
-                                    <span className="text-9xl font-bold text-blue-400 tabular-nums tracking-tighter">{bep}</span>
-                                    <span className="text-base font-bold text-slate-500 uppercase tracking-widest">Units</span>
+                        <div className="lg:col-span-4 space-y-8 lg:sticky lg:top-32">
+                            <div className="bg-[#0f172a] text-white p-14 rounded-[3rem] shadow-2xl relative overflow-hidden">
+                                <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px]"></div>
+                                <p className="text-xs uppercase tracking-[0.4em] text-slate-500 mb-12 font-bold">Monthly Break-even</p>
+                                <div className="flex items-baseline gap-4 mb-4 relative z-10 text-white">
+                                    <span className="text-8xl font-bold text-blue-400 tabular-nums tracking-tighter">{bep}</span>
+                                    <span className="text-sm font-bold text-slate-500 uppercase tracking-widest">Units</span>
                                 </div>
-                                {/* --- แก้ไข 2: เพิ่มข้อความอธิบายใต้ตัวเลขจุดคุ้มทุน --- */}
-                                <p className="text-slate-400 text-sm font-medium mt-4 relative z-10 leading-relaxed italic">
+                                {/* เพิ่มคำอธิบายตัวเลขจุดคุ้มทุน */}
+                                <p className="text-sm font-medium text-slate-400 mt-2 relative z-10">
                                     จำนวนที่ต้องขายต่อเดือนเพื่อ "เท่าทุน"
                                 </p>
-                                <div className="mt-14 pt-14 border-t border-white/5 flex justify-between items-end relative z-10">
-                                    <div><p className="text-xs text-slate-500 uppercase font-bold tracking-widest mb-2">Gross Margin / Unit</p><p className="text-4xl font-bold tabular-nums text-white">฿ {contribution.toLocaleString()}</p></div>
+                                <div className="mt-12 pt-12 border-t border-white/5 flex justify-between items-end relative z-10">
+                                    <div><p className="text-xs text-slate-500 uppercase font-bold tracking-widest mb-2">Gross Margin / Unit</p><p className="text-3xl font-bold tabular-nums text-white">฿ {contribution.toLocaleString()}</p></div>
                                 </div>
                             </div>
 
-                            <div className="bg-slate-50 p-16 rounded-[4rem] border border-slate-100 text-slate-800">
-                                <p className="text-xs uppercase tracking-[0.4em] text-slate-600 mb-12 font-bold text-center">Payback Period</p>
-                                <div className="flex items-baseline justify-center gap-5 text-slate-900">
-                                    <span className="text-8xl font-bold tabular-nums tracking-tighter">{payback}</span>
-                                    <span className="text-base font-bold text-slate-500 uppercase tracking-widest">Months</span>
+                            <div className="bg-slate-50 p-14 rounded-[3rem] border border-slate-100 text-slate-800">
+                                <p className="text-xs uppercase tracking-[0.4em] text-slate-500 mb-10 font-bold">Payback Period</p>
+                                <div className="flex items-baseline gap-4 text-slate-900">
+                                    <span className="text-7xl font-bold text-slate-900 tabular-nums tracking-tighter">{payback}</span>
+                                    <span className="text-sm font-bold text-slate-500 uppercase tracking-widest">Months</span>
                                 </div>
-                                <p className="text-base text-slate-500 font-medium mt-10 italic text-center leading-relaxed">"ระยะเวลาคืนทุนโดยประมาณ"</p>
+                                <p className="text-sm text-slate-500 font-medium mt-8 italic text-center">"ระยะเวลาคืนทุนโดยประมาณ"</p>
                             </div>
                         </div>
                     </div>
@@ -316,23 +307,23 @@
 
         const ContactPage = () => (
             <div className="max-w-5xl mx-auto py-32 px-8 animate-in text-center text-slate-800">
-                <h2 className="text-6xl font-bold mb-8 text-slate-900 tracking-tight">Contact Us.</h2>
-                <p className="text-2xl text-slate-500 font-light max-w-2xl mx-auto mb-20 leading-relaxed">มีคำถามเกี่ยวกับสมุด หรืออยากปรึกษาเรื่องก้าวแรกของการทำธุรกิจ? เรายินดีพูดคุยกับคุณเสมอ</p>
+                <h2 className="text-5xl font-bold mb-6 text-slate-900 tracking-tight">Contact Us.</h2>
+                <p className="text-xl text-slate-500 font-light max-w-2xl mx-auto mb-20 leading-relaxed">มีคำถามเกี่ยวกับสมุด หรืออยากปรึกษาเรื่องก้าวแรกของการทำธุรกิจ? เรายินดีพูดคุยกับคุณเสมอ</p>
                 <div className="grid md:grid-cols-2 gap-20 text-left">
-                    <div className="space-y-14">
-                        <div className="flex items-center gap-8 group">
-                            <div className="w-16 h-16 bg-[#0f172a] text-white rounded-2xl flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110"><Icon name="mail" className="w-7 h-7" /></div>
-                            <div><p className="text-xs font-bold text-slate-600 uppercase tracking-[0.2em] mb-1">Direct Email</p><p className="text-2xl font-bold text-slate-900">step.onebestbook@gmail.com</p></div>
+                    <div className="space-y-12">
+                        <div className="flex items-center gap-6">
+                            <div className="w-14 h-14 bg-[#0f172a] text-white rounded-xl flex items-center justify-center shadow-2xl shadow-blue-900/10"><Icon name="mail" className="w-6 h-6" /></div>
+                            <div><p className="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-1">Direct Email</p><p className="text-xl font-bold text-slate-900">step.onebestbook@gmail.com</p></div>
                         </div>
-                        <div className="flex items-center gap-8 group">
-                            <div className="w-16 h-16 bg-[#0f172a] text-white rounded-2xl flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110"><Icon name="facebook" className="w-7 h-7" /></div>
-                            <div><p className="text-xs font-bold text-slate-600 uppercase tracking-[0.2em] mb-1">Community</p><p className="text-2xl font-bold text-slate-900">STEP ONE Workbook</p></div>
+                        <div className="flex items-center gap-6">
+                            <div className="w-14 h-14 bg-[#0f172a] text-white rounded-xl flex items-center justify-center shadow-2xl shadow-blue-900/10"><Icon name="facebook" className="w-6 h-6" /></div>
+                            <div><p className="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-1">Community</p><p className="text-xl font-bold text-slate-900">STEP ONE Workbook</p></div>
                         </div>
                     </div>
-                    <form className="space-y-8">
-                        <input type="text" placeholder="ชื่อ" className="w-full p-6 rounded-2xl bg-slate-50 border-none font-semibold text-xl outline-none focus:ring-8 focus:ring-slate-100 transition-all" />
-                        <textarea placeholder="ข้อความ" className="w-full p-6 rounded-2xl bg-slate-50 border-none h-56 font-semibold text-xl outline-none focus:ring-8 focus:ring-slate-100 transition-all"></textarea>
-                        <button className="w-full bg-[#0f172a] text-white py-8 rounded-[2rem] font-bold text-base uppercase tracking-[0.3em] hover:bg-blue-900 transition-all shadow-2xl">Send Message</button>
+                    <form className="space-y-6">
+                        <input type="text" placeholder="ชื่อ" className="w-full p-5 rounded-2xl bg-slate-50 border-none font-semibold text-lg outline-none transition-all focus:ring-4 focus:ring-slate-100" />
+                        <textarea placeholder="ข้อความ" className="w-full p-5 rounded-2xl bg-slate-50 border-none h-48 font-semibold text-lg outline-none transition-all focus:ring-4 focus:ring-slate-100"></textarea>
+                        <button className="w-full bg-[#0f172a] text-white py-6 rounded-2xl font-bold text-sm uppercase tracking-[0.3em] hover:bg-blue-900 transition-all shadow-2xl shadow-blue-900/10">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -344,16 +335,16 @@
             
             return (
                 <div className="min-h-screen bg-white selection:bg-blue-100 selection:text-blue-900">
-                    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-2xl border-b border-slate-50 px-10 py-8">
+                    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-2xl border-b border-slate-50 px-10 py-6">
                         <div className="max-w-7xl mx-auto flex items-center justify-between">
-                            <h1 onClick={() => setPage('home')} className="text-3xl font-bold text-slate-900 cursor-pointer tracking-tighter">STEP ONE<span className="text-blue-600">.</span></h1>
-                            <div className="hidden md:flex gap-14 text-[13px] font-bold uppercase tracking-[0.25em] text-slate-600">
+                            <h1 onClick={() => setPage('home')} className="text-2xl font-bold text-slate-900 cursor-pointer tracking-tighter">STEP ONE<span className="text-blue-600">.</span></h1>
+                            <div className="hidden md:flex gap-12 text-[13px] font-bold uppercase tracking-[0.25em] text-slate-500">
                                 <button onClick={() => setPage('home')} className={`hover:text-slate-900 transition-colors ${page === 'home' ? 'text-slate-900' : ''}`}>Home</button>
                                 <button onClick={() => setPage('quiz')} className={`hover:text-slate-900 transition-colors ${page === 'quiz' ? 'text-slate-900' : ''}`}>Quiz</button>
                                 <button onClick={() => setPage('calc')} className={`hover:text-slate-900 transition-colors ${page === 'calc' ? 'text-slate-900' : ''}`}>Tools</button>
                                 <button onClick={() => setPage('contact')} className={`hover:text-slate-900 transition-colors ${page === 'contact' ? 'text-slate-900' : ''}`}>Contact</button>
                             </div>
-                            <button className="bg-[#0f172a] text-white px-10 py-4 rounded-full text-[13px] font-bold uppercase tracking-[0.15em] hover:bg-blue-900 transition-all shadow-xl">Buy Now</button>
+                            <button className="bg-[#0f172a] text-white px-8 py-3 rounded-full text-[12px] font-bold uppercase tracking-[0.15em] hover:bg-blue-900 transition-all shadow-xl shadow-blue-900/10">Buy Now</button>
                         </div>
                     </nav>
 
@@ -364,20 +355,20 @@
                         {page === 'contact' && <ContactPage />}
                     </main>
 
-                    <footer className="bg-slate-50 py-32 px-10 border-t border-slate-100">
-                        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-14">
+                    <footer className="bg-slate-50 py-24 px-10 border-t border-slate-100">
+                        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
                             <div>
-                                <h2 className="text-3xl font-bold text-slate-900 tracking-tight">STEP ONE<span className="text-blue-600">.</span></h2>
-                                <p className="text-slate-600 text-base font-bold uppercase tracking-[0.3em] mt-3 underline decoration-1 underline-offset-8 decoration-slate-300">Because the first step matters the most.</p>
+                                <h2 className="text-2xl font-bold text-slate-900 tracking-tight">STEP ONE<span className="text-blue-600">.</span></h2>
+                                <p className="text-slate-500 text-sm font-bold uppercase tracking-[0.3em] mt-2 underline decoration-1 underline-offset-8 decoration-slate-200">Because the first step matters the most.</p>
                             </div>
-                            <div className="flex gap-14 text-slate-500 text-[14px] font-bold uppercase tracking-[0.2em]">
+                            <div className="flex gap-12 text-slate-400 text-[13px] font-bold uppercase tracking-[0.2em]">
                                 <button onClick={() => setPage('quiz')} className="hover:text-slate-900 transition-all">Readiness</button>
                                 <button onClick={() => setPage('calc')} className="hover:text-slate-900 transition-all">Calculators</button>
                                 <button onClick={() => setPage('contact')} className="hover:text-slate-900 transition-all">Contact</button>
                             </div>
                         </div>
-                        <div className="max-w-7xl mx-auto mt-20 pt-20 border-t border-slate-200">
-                            <p className="text-slate-500 text-[12px] uppercase font-bold tracking-[0.3em] text-center md:text-left leading-relaxed">© 2024 STEP ONE Workbook. Created with Excellence for Future Entrepreneurs.</p>
+                        <div className="max-w-7xl mx-auto mt-16 pt-16 border-t border-slate-200/40">
+                            <p className="text-slate-400 text-[10px] uppercase font-bold tracking-[0.3em] text-center md:text-left">© 2024 STEP ONE Workbook. Made for Future Entrepreneurs.</p>
                         </div>
                     </footer>
                 </div>
