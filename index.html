@@ -439,9 +439,15 @@
 
             const handleSubmit = async (e) => {
                 e.preventDefault();
+                // ตรวจสอบว่ากรอกข้อมูลครบถ้วนก่อนส่ง
                 if (!formData.name || !formData.contact || !formData.message) return;
+                
                 setStatus('submitting');
-                setTimeout(() => setStatus('success'), 1500);
+                // จำลองการส่งข้อมูล (Mock API)
+                setTimeout(() => {
+                    setStatus('success');
+                    setFormData({ name: '', contact: '', message: '' }); // ล้างข้อมูลฟอร์ม
+                }, 1500);
             };
 
             return (
@@ -463,14 +469,39 @@
                         {status === 'success' ? (
                             <div className="bg-blue-50 p-10 rounded-[2rem] flex flex-col items-center justify-center text-center animate-in">
                                 <h3 className="text-2xl font-bold text-blue-900 mb-2">ส่งข้อความสำเร็จ!</h3>
+                                <p className="text-blue-700 font-light mb-8">เราได้รับข้อมูลของคุณแล้ว และจะรีบติดต่อกลับโดยเร็วที่สุด</p>
                                 <button onClick={() => setStatus('idle')} className="text-blue-600 font-bold uppercase tracking-widest text-xs border-b border-blue-200 pb-1">ส่งข้อความใหม่</button>
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit} className="space-y-6">
-                                <input type="text" placeholder="ชื่อของคุณ" required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full p-5 rounded-2xl bg-slate-50 border-none font-semibold text-lg outline-none transition-all focus:ring-4 focus:ring-slate-100" />
-                                <input type="text" placeholder="อีเมล หรือ เบอร์โทรศัพท์" required value={formData.contact} onChange={(e) => setFormData({...formData, contact: e.target.value})} className="w-full p-5 rounded-2xl bg-slate-50 border-none font-semibold text-lg outline-none transition-all focus:ring-4 focus:ring-slate-100" />
-                                <textarea placeholder="คุณมีอะไรอยากบอกเรา?" required value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full p-5 rounded-2xl bg-slate-50 border-none h-48 font-semibold text-lg outline-none transition-all focus:ring-4 focus:ring-slate-100"></textarea>
-                                <button disabled={status === 'submitting'} className="w-full bg-[#0f172a] text-white py-6 rounded-2xl font-bold text-sm uppercase tracking-[0.3em] hover:bg-blue-900 transition-all disabled:opacity-50">
+                                <input 
+                                    type="text" 
+                                    placeholder="ชื่อของคุณ" 
+                                    required 
+                                    value={formData.name} 
+                                    onChange={(e) => setFormData({...formData, name: e.target.value})} 
+                                    className="w-full p-5 rounded-2xl bg-slate-50 border-none font-semibold text-lg outline-none transition-all focus:ring-4 focus:ring-slate-100" 
+                                />
+                                <input 
+                                    type="text" 
+                                    placeholder="อีเมล หรือ เบอร์โทรศัพท์" 
+                                    required 
+                                    value={formData.contact} 
+                                    onChange={(e) => setFormData({...formData, contact: e.target.value})} 
+                                    className="w-full p-5 rounded-2xl bg-slate-50 border-none font-semibold text-lg outline-none transition-all focus:ring-4 focus:ring-slate-100" 
+                                />
+                                <textarea 
+                                    placeholder="คุณมีอะไรอยากบอกเรา?" 
+                                    required 
+                                    value={formData.message} 
+                                    onChange={(e) => setFormData({...formData, message: e.target.value})} 
+                                    className="w-full p-5 rounded-2xl bg-slate-50 border-none h-48 font-semibold text-lg outline-none transition-all focus:ring-4 focus:ring-slate-100"
+                                ></textarea>
+                                <button 
+                                    type="submit"
+                                    disabled={status === 'submitting'} 
+                                    className="w-full bg-[#0f172a] text-white py-6 rounded-2xl font-bold text-sm uppercase tracking-[0.3em] hover:bg-blue-900 transition-all disabled:opacity-50 shadow-2xl shadow-blue-900/10"
+                                >
                                     {status === 'submitting' ? 'กำลังส่งข้อมูล...' : 'Send Message'}
                                 </button>
                             </form>
